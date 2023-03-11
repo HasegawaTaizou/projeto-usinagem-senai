@@ -10,9 +10,41 @@
       href="https://fonts.googleapis.com/css2?family=Archivo:wght@500&family=Raleway:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/c0e5486155.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Login</title>
   </head>
   <body>
-    <main></main>
+    <main>
+      <img src="./img/banner.png" alt="Banner" class="banner" />
+      <div class="content">
+        <h1 class="title">SENAI</h1>
+        <form action="" class="login-container">
+          <h2 class="login__title">Log In</h2>
+          <div class="login__email-container">
+            <label for="" class="email__text">E-mail</label>
+            <input type="email" class="email__input" placeholder="E-mail" />
+          </div>
+          <div class="login__password-container">
+            <label for="" class="password__text">Senha</label>
+            <input
+              type="password"
+              class="password__input"
+              placeholder="Senha"
+            />
+            <i class="fa-solid fa-eye"></i>
+          </div>
+          <button class="login__button">Log in</button>
+          <a href="#" class="login__forgot-password">Esqueceu a senha?</a>
+        </form>
+        <span class="divider">Ou</span>
+        <button class="button__first-access">Primeiro acesso</button>
+      </div>
+    </main>
   </body>
 </html>

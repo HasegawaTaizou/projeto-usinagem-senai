@@ -1,2 +1,145 @@
-/* font-family: 'Archivo', sans-serif;
-font-family: 'Raleway', sans-serif; */
+body {
+  font-family: "Raleway", sans-serif;
+  color: var(--text-color);
+  font-weight: 400;
+  background-color: var(--background-color);
+}
+
+main {
+  display: grid;
+  grid-template-areas: "form banner";
+  grid-template-columns: 1fr auto;
+  justify-content: center;
+}
+
+.banner {
+  grid-area: banner;
+  height: 100vh;
+}
+
+.content {
+  grid-area: form;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-family: "Archivo", sans-serif;
+  font-size: 4.375rem;
+  color: var(--logo-color);
+  margin-bottom: 24px;
+}
+
+.login__title {
+  font-size: 2.25rem;
+  margin-bottom: 32px;
+}
+
+.login__email-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.email__input {
+  width: 332px;
+  height: 40px;
+  border: 1px solid var(--stroke-input-color);
+  border-radius: 3px;
+  background-color: var(--background-input-color);
+  padding-left: 6px;
+}
+
+.email__input::placeholder {
+  font-family: "Raleway";
+  font-size: 1rem;
+  color: var(--placeholder-color);
+}
+
+.login__password-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 52px;
+  position: relative;
+}
+
+.password__input {
+  width: 332px;
+  height: 40px;
+  border: 1px solid var(--stroke-input-color);
+  border-radius: 3px;
+  background-color: var(--background-input-color);
+  padding-left: 6px;
+}
+
+.password__input::placeholder {
+  font-family: "Raleway";
+  font-size: 1rem;
+  color: var(--placeholder-color);
+}
+
+.login__button {
+  width: 332px;
+  height: 40px;
+  background-color: var(--button-color);
+  color: var(--button-text-color);
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 24px;
+}
+
+.login__forgot-password {
+  font-weight: 500;
+  display: grid;
+  justify-content: center;
+}
+
+.login__forgot-password::after {
+  content: "";
+  display: block;
+  border: 1px solid var(--text-color);
+  width: 140px;
+  margin-top: 2px;
+}
+
+.fa-eye {
+  font-size: 1.25rem;
+  color: var(--placeholder-color);
+  position: absolute;
+  right: 12px;
+  top: 37px;
+}
+
+.divider {
+  display: block;
+  margin: 52px 0px;
+  padding: 0px 12px;
+}
+
+.divider::before {
+  content: url("../img/line.png");
+  margin-right: 6px;
+}
+
+.divider::after {
+  content: url("../img/line.png");
+  margin-left: 6px;
+}
+
+.button__first-access {
+  width: 332px;
+  height: 40px;
+  border-radius: 3px;
+  border: 1px solid var(--stroke-input-color);
+  background-color: var(--background-input-color);
+  font-weight: 500;
+  font-family: "Raleway";
+  color: var(--text-color);
+}
