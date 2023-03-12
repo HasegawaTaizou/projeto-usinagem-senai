@@ -14,8 +14,10 @@
       src="https://kit.fontawesome.com/c0e5486155.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/show-password.js" defer></script>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/displays.css" />
     <link rel="stylesheet" href="./css/loginStyle.css" />
     <title>Login</title>
   </head>
@@ -38,12 +40,15 @@
               placeholder="Senha"
             />
             <i class="fa-solid fa-eye"></i>
+            <i class="fa-solid fa-eye-slash"></i>
           </div>
-          <button class="login__button">Log in</button>
+          <a href="#"><button class="login__button">Log in</button></a>
           <a href="#" class="login__forgot-password">Esqueceu a senha?</a>
         </form>
         <span class="divider">Ou</span>
-        <button class="button__first-access">Primeiro acesso</button>
+        <a href="#"
+          ><button class="button__first-access">Primeiro acesso</button></a
+        >
       </div>
     </main>
   </body>
