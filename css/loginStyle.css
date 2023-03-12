@@ -110,25 +110,6 @@ main {
   margin-top: 2px;
 }
 
-.fa-eye {
-  font-size: 1.25rem;
-  color: var(--placeholder-color);
-  position: absolute;
-  right: 12px;
-  top: 37px;
-  cursor: pointer;
-}
-
-.fa-eye-slash {
-  display: none;
-  font-size: 1.25rem;
-  color: var(--placeholder-color);
-  position: absolute;
-  right: 12px;
-  top: 37px;
-  cursor: pointer;
-}
-
 .divider {
   display: block;
   margin: 52px 0px;
