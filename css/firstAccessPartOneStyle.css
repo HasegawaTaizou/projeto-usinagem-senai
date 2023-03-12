@@ -121,6 +121,7 @@ main {
   border: none;
   border-radius: 3px;
   margin-bottom: 24px;
+  cursor: pointer;
 }
 
 .footer__text {
